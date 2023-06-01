@@ -1,5 +1,10 @@
 {
 	"$schema": "https://docs.rome.tools/schemas/12.1.3/schema.json",
+	"javascript": {
+		"formatter": {
+			"semicolons": "asNeeded"
+		}
+	},
 	"organizeImports": {
 		"enabled": false
 	},
@@ -7,6 +12,10 @@
 		"enabled": true,
 		"rules": {
 			"recommended": true
-		}
+		},
+		"ignore": [".eslintrc*"]
+	},
+	"formatter": {
+		"ignore": ["tsconfig.node.json", ".eslintrc*"]
 	}
 }
